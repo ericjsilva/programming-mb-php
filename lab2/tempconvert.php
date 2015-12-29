@@ -15,14 +15,15 @@
     return $returnText;
   }
 
-  $setVar = $_GET["degree"];
+  if (isset($_GET["degree"])) {
+    $setVar = $_GET["degree"];
 
-  if (!is_numeric($setVar)) {
-    echo "Please enter only numbers for the temperature.</span>";
-  } else {
-    echo tempFtoCelsius($setVar);
+    if (!is_numeric($setVar)) {
+      echo "Please enter only numbers for the temperature.</span>";
+    } else {
+      echo tempFtoCelsius($setVar);
+    }
   }
-
 ?>
 <head>
     <title>BSA PHP Temperature Conversion</title>
