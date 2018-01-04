@@ -69,7 +69,7 @@ function print_tweet($tweet) {
   echo "</div>";
 }
 
-getTweets('#daretodo');
+getTweets('#wsj2019');
 
 ?>
 <html>
