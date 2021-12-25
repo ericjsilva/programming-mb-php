@@ -40,7 +40,8 @@ function getTweets($hash_tag)
   return true;
 }
 
-function print_tweet($tweet) {
+function print_tweet($tweet)
+{
   $make_link = TRUE;
   echo "<div class='tweet'>";
   // print twitter handle
@@ -69,10 +70,11 @@ function print_tweet($tweet) {
   echo "</div>";
 }
 
-getTweets('#wsj2019');
+getTweets('#corgis');
 
 ?>
 <html>
+
 <head>
   <title>My Twitter Feed App</title>
   <style>
@@ -82,16 +84,16 @@ getTweets('#wsj2019');
       font-size: 12px;
       color: #333333;
       padding: 10px;
-      margin:0 auto;
+      margin: 0 auto;
     }
 
     #stem-twitter .tweet {
       width: 200px;
-      margin:5px;
+      margin: 5px;
       padding: 5px;
-      float:left;
-      background:#f1f1f1;
-      border:3px solid #aaa;
+      float: left;
+      background: #f1f1f1;
+      border: 3px solid #aaa;
     }
 
     #stem-twitter .tweet .time {
@@ -122,13 +124,14 @@ getTweets('#wsj2019');
       -o-background-size: cover;
       background-size: cover;
       background: #70bg32;
-      background-repeat:no-repeat;
-      background: -webkit-linear-gradient( to left top, blue, red);
-      background: -moz-linear-gradient( to left top, blue, red);
-      background: -ms-linear-gradient( to left top, blue, red);
-      background: -o-linear-gradient( to left top, blue, red);
-      background: linear-gradient( to left top, blue, red);
+      background-repeat: no-repeat;
+      background: -webkit-linear-gradient(to left top, blue, red);
+      background: -moz-linear-gradient(to left top, blue, red);
+      background: -ms-linear-gradient(to left top, blue, red);
+      background: -o-linear-gradient(to left top, blue, red);
+      background: linear-gradient(to left top, blue, red);
     }
   </style>
 </head>
+
 </html>
